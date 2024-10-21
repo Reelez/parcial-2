@@ -1,0 +1,299 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color:#1d1a39;
+    
+}
+
+header {
+    background-color: #451952; 
+    padding: 20px 0; 
+    position: sticky; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322); 
+}
+
+/*TODO LO RELACIONADO AL NAV VAR Y SU DESIGN /////////////////////////////////////////////////////////////////*/
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    color: #f7a072; 
+    text-decoration: none; 
+    font-size: 20px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: color 0.5s ease; 
+}
+
+nav ul li a:hover {
+    color: #e8bcb9; 
+}
+
+/*seccion para las imagenes de presentacion //////////////////////////////////////////////////////*/
+section {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    
+    
+
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    border: 4px solid #662549; 
+    box-shadow: 0px 0px 15px 5px #662549; 
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+
+/*Espacio para las tarjetas de informacion de software*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.tarjeta {
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta:hover {
+    background-color: #6a4c93;
+    box-shadow: 0px 0px 15px 5px #f7a072;
+    
+    
+}
+
+.tarjeta img {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+
+.descripcion h3 {
+    color: #e8bcb9;
+}
+
+.descripcion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.descripcion li {
+    text-align: left;
+}
+
+a {
+    color: #f39f5a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e8bcb9;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*Espacio para las tarjetas de TUTORIALES/////////////////////////////////////////////////*/
+
+.tutoriales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.tutorial-tarjeta {
+    display: flex; 
+    background-color: rgba(69, 25, 82, 0.8); 
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+    max-height: 300px; 
+}
+
+.video-container {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.video-container img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.info-container {
+    flex: 2; 
+}
+
+.info-container h3 {
+    margin: 0;
+}
+
+.info-container p {
+    margin: 5px 0; 
+}
+
+.tutorial-tarjeta:hover {
+    background-color: #6a4c93; 
+    box-shadow: 0px 0px 15px 5px #f7a072; 
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*Info de beneficioens e influencers//////////////////////////////////////////////////////////////////////////////////////////*/
+
+.beneficios, .influencers {
+    color: #e8bcb9;           
+    text-align: center;       
+    justify-content: center;  
+    margin: 20px auto;       
+    max-width: 800px;        
+    padding: 20px;           
+    background-color: rgba(69, 25, 82, 0.8); 
+    border-radius: 10px;     
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.beneficios h2, .influencers h2 {
+    font-size: 24px;         
+    margin-bottom: 10px;     
+}
+
+.beneficios ul, .influencers ul {
+    list-style-type: none;    
+    padding: 0;               
+    text-align: left;         
+}
+
+.beneficios li, .influencers li {
+    font-size: 18px;         
+    margin: 5px 0;           
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 60vh; 
+    position: static;
+    top: -80px;
+    margin: 0 auto;
+    
+}
+
+.body{
+    padding: 0;
+    margin: auto;
+    width: 960px;
+}
+
+
+.contenido{
+    margin:top;
+    padding: 10px;
+    float:left;
+    width: 938px;
+    background-color: #451952;
+    border:1px solid #111;
+    box-shadow: 0 4px 10px #8b3ba677;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.headernombre{
+    color: #e8bcb9;
+    padding: 0px 0px;
+    margin: 00 auto;
+}
+
+.justificar{
+    text-align: justify;
+    color:#EEEEEE ;
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #e8bcb9;
+    color: #222831;
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+    margin: 0;
+}  
+
+.mivida {
+    color: #e8bcb9;
+    text-align: left; 
+    max-width: 800px; 
+    padding: 20px; 
+    background-color: rgba(69, 25, 82, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    margin: 0; 
+}
+
+.imgpersonal {
+    width: 15%; 
+    margin-left: 20px; 
+}
+
+.imgpersonal img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    border: 4px solid #ffffff; 
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
